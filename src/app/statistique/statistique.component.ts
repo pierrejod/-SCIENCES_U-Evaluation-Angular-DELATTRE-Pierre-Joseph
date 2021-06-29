@@ -15,7 +15,7 @@ export class StatistiqueComponent implements OnInit {
   
   stat1=new StatistiqueComponent(1,'Démographie france','60M','SUCCESS');
   stat2=new StatistiqueComponent(2,'Démographie Espagne','50M','SUCCESS');
-  
+  stats: any =[this.stat1,this.stat2];
 
   constructor(id: Number,titre: String,valeur: String,appreciation: String) {
     this.id=id;
